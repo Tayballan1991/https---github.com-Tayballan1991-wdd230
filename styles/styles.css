@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+html {
+    display : grid;
+    grid-template-columns : 1fr;
+    grid-template-rows : 1fr;
+    justify-items : center;
+    align-items : center;
+    height : 100%;
+    }
+    body {
+    border-radius : 5px;
+    min-height : 406px;
+    height : 70%;
+    width : 70%;
+    max-width : 700px;
+    background-color : white;
+    }
+    header {
+    padding : 1em;
+    display : grid;
+    position : relative;
+    background-color : #be95c4ff;
+    grid-template-columns : auto 20%;
+    grid-template-rows : 5em;
+    justify-items : center;
+    border-radius : 5px;
+    z-index : 15;
+    }
+    h1 {
+    font-size : 40px;
+    font-family: 'handlee';
+    color : white;
+    align-self : center;
+    }
+    header > img {
+    width : 100%;
+    box-shadow : 1px 1px 10px #231942ff;
+    border-radius : 5px;
+    }
+    main {
+    width : 97%;
+    height : calc(100% - 5em - 6em - 4em + 5px);
+    margin : 2em 0 2em auto;
+    position : relative;
+    font-family: 'handlee';
+    }
+    h2 {
+    border-bottom : 1px solid #cccccc;
+    margin-bottom : 0;
+    width : 95%;
+    }
+    ul {
+    margin : 0;
+    padding-top : 10px;
+    width : calc(100% - 40px);
+    height : 94%;
+    overflow-y : auto;
+    }
+    ul li {
+    padding-bottom : 5px;
+    }
+    a {
+    color : #5e548eff ;
+    }
+    a:active {
+    color : #231942ff;
+    }
+    footer {
+    font-family: 'handlee';
+    background-color : #be95c4ff;
+    position : relative;
+    color : white;
+    padding : 0.75em;
+    border-radius : 5px;
+    text-align : center;
+    z-index : 10;
+    }
+    footer a {
+    color : white;
+    text-decoration : underline #5e548eff;
+    transition : color 0.5s, text-shadow 0.5s;
+    }
+    footer a:hover {
+    color : #e0b1cbff;
+    text-shadow : 1px 1px 10px #231942ff;
+    }
+    #updated {
+    color : white;
+    font-size : 12px;
+    }
+    #not-reasonable-size {
+    display : none;
+    }
+    .brk1 {
+    display : none;
+    }
+    .unBrk1 {
+    display : inline;
+    }
+    #scroll-down {
+    position : absolute;
+    transition : all 0.4s;
+    top : calc(100% + 40px);
+    background-color : rgb(0, 0, 0, 0.8);
+    transform : translate(-50%,0);
+    padding : 0.25rem 0.5rem;
+    border-radius : 5px;
+    font-size : 0.7rem;
+    color : white;
+    left : 50%;
+    }
+    #scroll-down.up {
+    top : calc(100%);
+    }
+    ::-webkit-scrollbar {
+    width : 7px;
+    }
+    ::-webkit-scrollbar-track {
+    background : transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+    background-color : #9f86c0ff;
+    border-radius : 5px;
+    }
+    body {
+    width : 90%;
+    }
+    .brk1 {
+    display : block;
+    }
+    .unBrk1 {
+    display : none;
+    }
+    h1 {
+    justify-self : start;
+    }
+    @media screen and (max-width: 405px) {
+    header {
+    grid-template-columns : auto 54.8px;
+    }
+    .brk2 {
+    display : block;
+    }
+    .unBrk2 {
+    display : none;
+    }
+    h2 {
+    text-align : center;
+    }
+    ul {
+    padding-left : 20px;
+    height : 80%;
+    }
+    }
