@@ -1,2 +1,1 @@
-
-document.getElementById('updated').innerHTML = 'Last updated: '+document.lastModified
+document.getElementById('updated').innerHTML = 'Last updated: '+document.lastModifiedf
