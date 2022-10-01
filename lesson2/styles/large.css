@@ -37,6 +37,7 @@ section * {
     font-family: 'Roboto', sans-serif;
 }
 section {
+    margin: 0 1rem;
     border-radius: 20px;
     background-color: white;
     border: solid 1px #5e548eff;
