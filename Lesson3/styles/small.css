@@ -133,3 +133,8 @@ th {
 .colors {
     width: 100%;
 }
+#updated {
+    display: block;
+    padding: 5px;
+    font-size: small;
+}
