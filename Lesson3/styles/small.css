@@ -20,11 +20,8 @@ header {
 nav {
     font-size: 25px;
 }
-.page1heading, 
-.page2heading, 
-.page3heading, 
-.page4heading, {
-    font-size: 25 px;
+.page1heading, .page2heading, .page3heading, .page4heading {
+    font-size: 25px;
     color: #554971;
 }
 
@@ -39,7 +36,7 @@ h4, p {
 }
 
 ul, li, ol {
-    font-size: 18;
+    font-size: 18px;
 }
 
 footer {
