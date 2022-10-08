@@ -7,10 +7,10 @@
     <title>Weather Site Planning Home Page </title>
     <meta name = 'discription' content = 'This paige will contain my weather and 
     traffic planning document Home Page.  '>
-    <link rel = 'stylesheet' href = ''>
-    <link rel = 'stylesheet' href = ''>
-    <link rel = 'stylesheet' href = ''>
-    <link rel = 'stylesheet' href = ''>
+    <link rel = 'stylesheet' href = 'styles/normalize.css'>
+    <link rel = 'stylesheet' href = 'styles/small.css'>
+    <link rel = 'stylesheet' href = 'styles/medium.css'>
+    <link rel = 'stylesheet' href = 'styles/large.css'>
 </head>
 <body>
     <header>
@@ -19,9 +19,22 @@
         </picture>
         <section class = 'heading'>
             <h1>Updates to Go</h1>
-            <div class = 'motto'> # </div>
+            <div class = 'motto'> "A change in the weater is sufficent to recreate the
+                world and our selves." </div>
         </section>
     </header>
+    <nav>
+        <button onclick = 'toggleMenu()'>&#9776</button>
+        <ul id = 'primaryNav'>
+            <li class = 'active'><a href = 'index.html'>Home</a></li>
+            <li><a href = '#'></a>Roy</li>
+            <li><a href = '#'></a>Hooper</li>
+            <li><a href = '#'></a>Farr West</li>
+            <li><a href = '#'></a>Contact Us</li>
+            <li><a href = '#'></a>Gallery</li>
+        </ul>
+
+    </nav>
     <main>
         <h2>Roy, Utah</h2>
         <div class = 'contentbox'>Daily Forcast</div>
