@@ -20,6 +20,7 @@ header, footer{
     color: #B8F3FF;
     background-color: #36213E;
     text-align: center;
+    border-radius: 10px;
 }
 header {
     display: flex;
@@ -34,6 +35,7 @@ header {
 header img {
     width: 100px;
     height: auto;
+    border-radius: 10px;
 }
 .heading, h1 {
     font-size: 35px;
@@ -49,6 +51,7 @@ header img {
 nav {
     font-size: 20px;
     width: 100%;
+    border-radius: 10px;
 }
 
 nav button{
@@ -124,7 +127,7 @@ nav ul.hide{
 .contentbox {
     display: block;
     margin: 10px auto;
-    border: 5px solid #36213E;
+    border: 2px solid #36213E;
     border-radius: 10px;
     padding: 15px;
     background-color: lavender;
