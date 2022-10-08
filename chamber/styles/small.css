@@ -131,10 +131,13 @@ nav ul.hide{
     padding: 15px;
     background-color: lavender;
     color: #554971;
-    font-family: 'Handlee', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 #copy {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+}
+.date {
+    font-size:  20px ;
 }
