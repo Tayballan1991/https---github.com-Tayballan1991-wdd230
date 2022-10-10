@@ -37,11 +37,11 @@ header img {
     border-radius: 10px;
 }
 .heading, h1 {
-    font-size: 35px;
+    font-size: 45px;
     margin: 10px;
 }
 .motto {
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
     font-weight: normal;
     margin: 5px;
@@ -122,6 +122,11 @@ nav a.hover {
 nav ul.hide{
     display: none;
 }
+footer img {
+    width: 10%;
+    height: auto;
+    padding: 10px;
+}
 
 .contentbox {
     display: block;
@@ -140,4 +145,5 @@ nav ul.hide{
 }
 .date {
     font-size:  20px ;
+    padding-top: 10px;
 }
