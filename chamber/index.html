@@ -26,7 +26,6 @@
             <aside></aside>
             <script src = 'scripts/currentdate.js'></script>
         </section>
-        
     </header>
     <nav>
         <button onclick = 'toggleMenu()'>&#9776;</button>
@@ -38,29 +37,95 @@
             <li><a href = '#'></a>Contact Us</li>
             <li><a href = '#'></a>Gallery</li>
         </ul>
-
     </nav>
     <main>
         <h2>Roy, Utah</h2>
-        <div class = 'contentbox'>Daily Forcast</div>
-        <div class = 'contentbox'>Daily traffic updates</div>
-        <div class = 'contentbox'>Activities</div>
-        <div class = 'contentbox'>Contact Us</div>
+        <div class = 'banner-box'>
+            <img class = 'banner-img' src = 'images/Roy.jpeg' alt = 'Image of Welcome to Roy sign'>
+            <!--My Hero image-->
+            <section class = 'sumweather'>
+                <h3>Weather Summery</h3>
+                <p>Current: Sunny</p>
+                <p>Temperature: 69˚F</p>
+                <p>Humidity: 40%</p>
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed: 4mph</p>
+            </section>
+        </div>
+        <div class = 'contentbox'>
+            <!--Setting up a table for the weather.-->
+            <table class = 'weather'>
+                <tr>
+                    <!--Frist row for the table-->
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <!--Second row for the table-->
+                    <td><img src = 'images/sunny.png' alt =  'Sun Icon'></td>
+                    <td><img src = 'images/sunny.png' alt =  'Sun Icon'></td>
+                    <td><img src = 'images/sunny.png' alt =  'Sun Icon'></td>
+                    <td><img src = 'images/sunny.png' alt =  'Sun Icon'></td>
+                    <td><img src = 'images/sunny.png' alt =  'Sun Icon'></td>
+                </tr>
+                <tr>
+                    <!-- Third row for the table-->
+                    <td>46˚/70˚</td>
+                    <td>46˚/71˚</td>
+                    <td>46˚/71˚</td>
+                    <td>43˚/70˚</td>
+                    <td>46˚/70˚</td>
+                </tr>
+            </table>
+        </div>
+        <div class = 'contentbox'>
+            <h3>Road Weather Alerts</h3>
+            <p> No alerts at this time. </p>
+            <p> Keep in mind that we will not give weather forecast information that 
+                extends beyond the next few hours. We will give some foresight to 
+                weather events and the timing and location of those events up to a 
+                day in advance on extremely intense storm activity. Exceptions with 
+                this are dealt with on a case-bycase basis.
+            </p>
+            <H3>Emergency Alerts</H3>
+            <p>No alerts at this time.</p>
+        </div>
+        <div class = 'contentbox'>
+            <h3>Activities</h3>
+            <img class = 'museum' src = 'images/museum.jpeg' alt = 'Image of an Airplane'>
+            <p> Come and take take a walk History of the United States Airfoce.
+                You can walk through on your own or click <a class = 'Here' href = 'https://www.aerospaceutah.org/museum/about-the-museum/plan-your-visit/'>Here</a>
+                schedule a guided tour.
+             </p>
+            <p> Hill Aerospace Museum is a military aviation museum located at Hill Air 
+                Force Base in Roy, Utah. It is dedicated to the history of the base and 
+                aviation in Utah.</p>
+            <p> The Museum was opened in 1986, and was founded in 1981 as part of the 
+                United States Air Force Heritage Program. ot only does the Museum have 
+                more than 70 aircraft on display in its two inside galleries and outside 
+                air park, it exhibits thousands of artifacts depicting the history of 
+                aviation of the United States Air Force, Hill Air Force Base and the 
+                State of Utah.</p>
+        </div>
+        <section class = 'contactbox4'>
+            <!--Map, contact information, and social media icons-->
+            <iframe class = 'map' 
+            src = 'https://www.google.com/maps/search/Roy+City+Municipal+center,+Roy,+UT/@41.1833165,-112.0516722,14z/data=!3m1!4b1' 
+            width = '600' height = '450' style = 'border:0' allowfullscrren = 'flase' tabindex = '0'></iframe>
+            <div class = 'contentbox'>
+                <h3>Contact Us</h3>
+                <p><span>&#x1F4CC;</span>5051 S 1900 W, Roy, UT 84067</p>
+                <p><span>&#x1F4DE;</span>(801) 774-1000</p>
+                <p><span>&#x1F4E7;</span>weather@updatestogo.info</p>
+    
+            </div>
+        </section>
     </main>
     <footer>
-        <img src = 'images/logo-lesson3.jpg' alt = 'Logo for site'>
         &copy;<span id  = 'year'></span> | Taylor Ballantyne | 
-        <div class = 'social'>
-            <a href = 'https://facebook.com' target = '_blank'>
-                <img src = 'images/facebook.png' alt = 'fb logo'>
-            </a>
-            <a href = 'https://twitter.com' target = '_blank'>
-                <img src = 'images/twitter.png' alt = 'twitter icon'>
-            </a>
-            <a href = 'https://instagram.com' target = '_blank'>
-                <img src = 'images/instagram.png' alt = 'instagram icon'>
-            </a>
-        </div>        
         <span id = 'updated'></span>
     </footer>
     <script src = 'scripts/currentyear.js'></script>
