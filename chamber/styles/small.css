@@ -217,9 +217,9 @@ h3 {
   flex-wrap: wrap;
 }
 .ads {
-
   box-shadow: #63768d;
   padding: 10px;
+  text-align: center;
 }
 .ads h3 {
   background-color: #554971;
