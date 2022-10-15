@@ -1,208 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@300&display=swap');
-/* 
+/* Main CSS */
+/* Fonts
 font-family: 'Handlee', cursive;
 font-family: 'Roboto', sans-serif;
 */
-  
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Handlee', cursive;
-    font-size: 16px;
-  }
-  p {
-    font-family: 'Roboto', sans-serif;
-  }
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  header, footer {
-    color: #B8F3FF;
-    background-color: #36213E;
-    text-align: center;
-  }
-  
-  header img {
-    width: 100px;
-   height: auto;
-   padding: 15px;
-  }
-  .heading {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .heading h1 {
+
+/* Colors 
+--dark-purple: #36213eff;
+--cyber-grape: #554971ff;
+--slate-gray: #63768dff;
+--middle-blue: #8ac6d0ff;
+--blizzard-blue: #b8f3ffff;
+
+*/
+body {
+  margin: 10px;
+  background-color: lavender;
+}
+header, footer {
+  background-color: #36213E;
+  color: #B8F3FF;
+  border-radius: 10px;
+  font-family: 'Handlee', cursive;
+  text-align: center;
+  padding: 10px;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h3 {
+  font-family: 'Handlee', cursive;
+}
+ /* Logo for header and footer */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: left;
+}
+.logo img {
+  width: 80px;
+  height: auto;
+}
+.logo-headings {
+  display: flex;
+  flex-direction: column;
+  margin: .05px;
+}
+.logo-headings h1{
+  margin: 0;
+  font-size: 25px;
+}
+/* Navigation */
+nav {
+  background-color: #63768d;
+  color: #B8F3FF;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Handlee', cursive;
+  border-radius: 10px;
+
+}
+nav button {
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  color: #8ac6d0;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding-inline-start: 0;
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  color: #B8F3FF;
+  padding: .75rem 2vw;
+  text-decoration: none;
+  font: 15px;
+}
+nav ul li.active a {
+  background-color: #554971;
+  color: lavender;
+}
+nav ul li a:hover {
+  background-color: #554971;
+  color: #8ac6d0;
+}
+nav ul {
+  display: none;
+}
+nav ul.open { 
+  display: block;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  padding: 10px;
+}
+.social-header{
+  padding: 10px;
+  margin: 5px auto;
+}
+.social-header svg {
+  width: 25px;
+  height: auto;
+}
+
+.togglebtn span:nth-child(1) {display: block;}
+.togglebtn span:nth-child(2) {display: none;}
+
+.togglebtn.open span:nth-child(1) {display: none;}
+.togglebtn.open span:nth-child(2) {display: block;}
+
+.togglebtn {
     font-size: 1.5rem;
-    color: #8AC6D0;
-  }
-  
-  .motto {
-    letter-spacing: 1pt;
-    color: #B8F3FF;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 0.8rem;
-  }
-  
+    color: laveder;
+}
+.date {
+  background-color: lavender;
+  color: #63768d;
+  padding: .75rem;
+}
 
-  
-  header button {
-    margin: 0.5rem 1rem;
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-    color: lavender;
-  }
-  
-  header div:nth-child(3) {
-    grid-column: span 2;
-    margin: 0.5rem 1rem;
-    padding: 0.5rem;
-    color: #eee;
-  }
-  
-  nav {
-    background-color: #63768D;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 0.8rem 2vw;
-    text-decoration: none;
-    color: #63768D;
-  }
-  
-  nav ul li.active a {
-    background-color: #554971;
-    color: #8AC6D0;
-  }
-  
-  nav ul li a:hover {
-    background-color: #554971;
-  }
-  
-  nav ul {
-    display: none;
-  }
-  
-  nav ul.open {
-    display: block;
-  }
-  
-  .togglebtn span:nth-child(1) {
-    display: block;
-  }
-  .togglebtn span:nth-child(2) {
-    display: none;
-  }
-  
-  .togglebtn.open span:nth-child(1) {
-    display: none;
-  }
-  .togglebtn.open span:nth-child(2) {
-    display: block;
-  }
-  
-  .date {
-    text-align: center;
-  }
-  
-  main {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.5rem;
-  }
-  
-  main div {
-    border: 1px solid #36213E;
-    padding: 1rem;
-    background-color: lavender;
-    min-height: 300px;
-    font-style: italic;
-    color: #333;
-  }
-  main .banner-box {
-    position: relative;
-  }
-  main .banner-img {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-  }
-  main .ads {
-    display: none;
-  }
-  .news {
-    padding: 1rem;
-    text-align: center;
-    line-height: 1.3rem;
-    letter-spacing: 0.1rem;
-  }
-  .ads {
-    box-shadow: 0 0 5px #36213E;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
-  .weather {
-    text-align: center;
-  }
-  footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-  }
+/* Footer */
+.headings h3{
+  font-size: 15px;
+  margin: .05px;
+}
+.headings {
+  font-size: 15px;
+  margin: .05px;
+}
+.info{
+  padding: 10px;
+  border-top: 1px solid #8ac6d0;
+}
+.logo-footer img {
+  width: 150px;
+  height: auto;
+}
+/* Main */
 
-  footer img {
-    margin: 1rem 1rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  footer .logo p {
-    margin-top: -0.2rem;
-  }
-  
-  footer .info {
-    text-align: center;
-  }
-  
-  footer .info a {
-    text-decoration: none;
-    color: #8AC6D0;
-  }
-  
-  footer .info a:hover {
-    color: #554971;
-  }
-  
-  footer .copyright {
-    border-top: 1px solid lavender;
-    margin: 1rem;
-    text-align: center;
-  }
-  
-  footer .copyright .name {
-    font-weight: bold;
-  }
-  
-  footer .copyright .separation {
-    display: none;
-  }
-  
+main {
+  margin: 15px;
+}
+h3 {
+  background-color: #554971;
+  padding: .8rem;
+  text-align: center;
+  color: lavender;
+  font-size: 1.2rem;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+.banner-box {
+  margin: 10px auto;
+  position: relative;
+}
+.banner-img {
+  width: 100%;
+}
+.join {
+  background-color: #554971;
+  color: lavender;
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
+  padding: 1.3rem;
+  box-shadow: #36213E;
+  opacity: .8;
+  border: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+.joinbtn {
+  background-color: #63768d;
+  color: #8ac6d0;
+}
+.meet {
+  background: lavender;
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  padding: 1.3rem;
+  border-radius: 10px;
+  font-family: 'Handlee', cursive;
+  font: 20px;
+}
+.boxes {
+  border: 1px solid #554971;
+  box-shadow: #63768d;
+  padding: 10px;
+}
+.sponser {
+  display: flex;
+  flex-shrink: column;
+  flex-wrap: wrap;
+}
+.ads {
+
+  box-shadow: #63768d;
+  padding: 10px;
+}
+.ads h3 {
+  background-color: #554971;
+  padding: .8rem;
+  text-align: center;
+  color: #8ac6d0;
+  font-size: 15px;
+}
+.ads:nth-child(3){
+  display: none;
+}
+.join-box {display: none;}
