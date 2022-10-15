@@ -41,7 +41,7 @@ h1, h3 {
   height: auto;
   padding: 10px;
 }
-.headings {
+.logo-headings {
   display: flex;
   flex-direction: column;
   margin: .05px;
@@ -59,8 +59,6 @@ nav {
   font-family: 'Handlee', cursive;
   font-size: 20px;
   border-radius: 10px;
-
-
 }
 nav button {
   margin: .2rem 2vw;
@@ -105,10 +103,13 @@ nav ul.open {
   padding: 10px;
 }
 .social{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   padding: 10px;
   margin: 5px auto;
 }
-.socialsvg {
+.social svg {
   width: 25px;
   height: auto;
 }
