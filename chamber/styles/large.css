@@ -3,7 +3,7 @@
       display: none;
   }
       
-  nav ul #primaryNav {
+  nav ul#primaryNav {
       display: flex;
       text-align: center;
   } 
@@ -15,14 +15,7 @@
   nav ul li a {
       border: none;
   }
-  .social {
-    margin-right: 1rem 1rem;
-  }
-  .social svg {
-    width: 2rem;
-    height: auto;
-  }
- 
+
   .header-item:nth-child(2) {
       order: 1;
   }

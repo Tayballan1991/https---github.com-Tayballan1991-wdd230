@@ -34,12 +34,11 @@ h1, h3 {
 .logo {
   display: flex;
   align-items: center;
-  margin-left: left;
+  margin-left: 1rem;
 }
 .logo img {
   width: 100px;
   height: auto;
-  padding: 10px;
 }
 .logo-headings {
   display: flex;
@@ -48,23 +47,21 @@ h1, h3 {
 }
 .logo-headings h1{
   margin: 0;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 /* Navigation */
 nav {
   background-color: #63768d;
   color: #B8F3FF;
   margin: 0 auto;
-  text-align: center;
-  font-family: 'Handlee', cursive;
-  font-size: 20px;
+  text-align: left;
   border-radius: 10px;
 }
 nav button {
   margin: .2rem 2vw;
-  background: transparent;
+  background: transparent; 
   border: none;
-  font-size: 20px;
+  font-size: 2rem;
   color: #8ac6d0;
 }
 nav ul {
@@ -78,11 +75,12 @@ nav ul li a {
   color: #B8F3FF;
   padding: .75rem 2vw;
   text-decoration: none;
-  font: 1rem;
+  font-size: 1.5rem;
 }
 nav ul li.active a {
   background-color: #554971;
   color: lavender;
+  border-radius: 10px;
 }
 nav ul li a:hover {
   background-color: #554971;
@@ -94,12 +92,15 @@ nav ul {
 nav ul.open { 
   display: block;
 }
-.logo {
+.header{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
 }
 .social{
@@ -179,8 +180,8 @@ h3 {
   background-color: #554971;
   color: lavender;
   position: absolute;
-  bottom: 25px;
-  right: 50px;
+  top: 25px;
+  left: 50px;
   padding: 1.3rem;
   box-shadow: #36213E;
   opacity: .8;
@@ -201,6 +202,9 @@ h3 {
   border-radius: 10px;
   font-family: 'Handlee', cursive;
   font: 20px;
+}
+.weather {
+  text-align: center;
 }
 .boxes {
   border: 1px solid #554971;
