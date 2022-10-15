@@ -1,5 +1,5 @@
 @media only screen and (min-width: 37.5em) {
-    .social-header svg {
+    .social svg {
         width: 33px;
         height: auto;
     }
@@ -17,7 +17,7 @@
         
     }
     
-    .headings {
+    .heading-foot {
         display: flex;
         flex-direction: column;
     }

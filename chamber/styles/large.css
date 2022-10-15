@@ -54,12 +54,12 @@
   }
   .weather {
       grid-column: 1 / 2;
-      grid-row: 2 / 3;
+      grid-row: 1 / 2;
   }
 
   .events {
       grid-column: 1 / 2;
-      grid-row: 1 / 2;
+      grid-row: 2 / 3;
   }
 
   .news {
